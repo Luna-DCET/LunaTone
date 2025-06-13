@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Accessories</title>
+  <link rel="icon" href="title.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<script src="auth.js"></script>
+
+<body>
+  <!-- HEADER -->
+  <header class="site-header">
+
+    <!-- LOGO LINK -->
+    <div class="logo">
+      <a href="index.html">
+        <img src="lunatone.jpg" alt="LunaTone Logo" />
+      </a>
+    </div>
+
+    <!-- NAV LINK -->
+    <nav>
+      <ul class="nav-menu">
+        <li><a href="accessories.html">Accessories</a></li>
+        <li><a href="electronics.html">Electronics</a></li>
+        <li><a href="merchandise.html">Merchandise</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+
+    <!-- USER ACTIONS -->
+    <div class="nav-actions">
+
+      <!-- NOT LOGGED IN -->
+      <a href="login.html" class="nav-button login-button" id="loginButton">Login</a>
+      <a href="signup.html" class="nav-button signup-button" id="signupButton">Sign Up</a>
+
+      <!-- LOGGED IN -->
+      <button class="nav-button logout-button" id="logoutButton" style="display: none;">Logout</button>
+
+      <a href="cart.html" class="nav-button cart-button same-size-btn">My Cart</a>
+    </div>
+  </header>
+
+  <!-- PRODUCT -->
+  <section class="products">
+    <h1>Accessories</h1>
+
+    <!-- PRODUCT GRID -->
+    <div class="product-grid">
+
+      <!-- GUITAR PICK SET -->
+      <div class="product-card" data-id="gibson-pick-12pcs">
+        <img src="guitarpickset.jpg" alt="Guitar Pick Set" />
+        <div class="product-name">Gibson Medium Pick (12pcs)</div>
+        <div class="product-info">
+          <div class="product-price">P 250</div>
+          <input type="number" min="1" value="1" class="quantity-input" />
+        </div>
+        <button class="add-to-cart-button">Add to Cart</button>
+      </div>
+
+      <!-- GUITAR CABLE -->
+      <div class="product-card" data-id="fender-cable-10ft">
+        <img src="guitarcable.jpg" alt="Guitar Cable" />
+        <div class="product-name">Fender Guitar Cable (10ft)</div>
+        <div class="product-info">
+          <div class="product-price">P 350</div>
+          <input type="number" min="1" value="1" class="quantity-input" />
+        </div>
+        <button class="add-to-cart-button">Add to Cart</button>
+      </div>
+
+      <!-- PICKGUARD -->
+      <div class="product-card" data-id="fender-strat-pickguard">
+        <img src="guitarpickguard.jpg" alt="Guitar Pickguard" />
+        <div class="product-name">Fender Stratocaster Pickguard</div>
+        <div class="product-info">
+          <div class="product-price">P 400</div>
+          <input type="number" min="1" value="1" class="quantity-input" />
+        </div>
+        <button class="add-to-cart-button">Add to Cart</button>
+      </div>
+
+    </div>
+  </section>
+</body>
+
+
+
+<script src="cartActions.js"></script>
+</html>

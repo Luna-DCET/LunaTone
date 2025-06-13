@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Checkout - LunaTone Supply Co.</title>
+  <link rel="icon" href="title.png">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="checkout.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header class="site-header">
+
+    <!-- LOGO LINK -->
+    <div class="logo">
+      <a href="index.html">
+        <img src="lunatone.jpg" alt="LunaTone Logo" />
+      </a>
+    </div>
+
+    <!-- NAV LINK -->
+    <nav>
+      <ul class="nav-menu">
+        <li><a href="accessories.html">Accessories</a></li>
+        <li><a href="electronics.html">Electronics</a></li>
+        <li><a href="merchandise.html">Merchandise</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+
+    <!-- USER ACTIONS -->
+    <div class="nav-actions">
+
+      <!-- NOT LOGGED IN -->
+      <a href="login.html" class="nav-button login-button" id="loginButton">Login</a>
+      <a href="signup.html" class="nav-button signup-button" id="signupButton">Sign Up</a>
+
+      <!-- LOGGED IN -->
+      <button class="nav-button logout-button" id="logoutButton" style="display: none;">Logout</button>
+
+      <a href="cart.html" class="nav-button cart-button same-size-btn">My Cart</a>
+    </div>
+  </header>
+
+  <!-- CHECKOUT -->
+  <section class="checkout">
+    <h1>Checkout</h1>
+    <div class="checkout-details">
+      <h2>Order Summary</h2>
+      <div id="cartContainer"></div>
+      <p>Total Price: <span id="totalPrice">$0.00</span></p>
+    </div>
+
+    <div class="billing-info">
+      <h2>Billing Information</h2>
+      <form id="billingForm">
+        <input type="text" placeholder="Full Name" required />
+        <input type="email" placeholder="Email" required />
+        <input type="text" placeholder="Shipping Address" required />
+        <input type="text" placeholder="City" required />
+        <input type="text" placeholder="State" required />
+        <input type="text" placeholder="Zip Code" required />
+        <input type="text" placeholder="Credit Card Number" required />
+        <input type="text" placeholder="Expiration Date (MM/YY)" required />
+        <input type="text" placeholder="CVV" required />
+        <button type="submit" class="nav-button checkout-button">Complete Purchase</button>
+      </form>
+    </div>
+  </section>
+
+  <script src="checkout.js"></script>
+</body>
+
+
+</html>
