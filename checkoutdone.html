@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Order Confirmed - LunaTone Supply Co.</title>
+  <link rel="icon" href="title.png">
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="logo">
+      <a href="index.html">
+        <img src="lunatone.jpg" alt="LunaTone Logo" />
+      </a>
+    </div>
+    <nav>
+      <ul class="nav-menu">
+        <li><a href="accessories.html">Accessories</a></li>
+        <li><a href="electronics.html">Electronics</a></li>
+        <li><a href="merchandise.html">Merchandise</a></li>
+        <li><a href="about.html">About</a></li>
+      </ul>
+    </nav>
+    <div class="nav-actions">
+      <a href="index.html" class="nav-button">Home</a>
+      <a href="cart.html" class="nav-button">My Cart</a>
+    </div>
+  </header>
+
+  <!-- CONFIRMATION  -->
+  <section class="confirmation">
+    <h1>Thank You for Your Order!</h1>
+    <p>Your order has been successfully placed and is now being processed.</p>
+    <p>You will receive an email confirmation shortly (if implemented).</p>
+    <p class="thank-you">Your items are now on their way!</p>
+
+    <a href="index.html" class="nav-button">Back to Home</a>
+  </section>
+
+  <script>
+    // CLEAR INFO
+    localStorage.removeItem("cart");
+    localStorage.removeItem("billingInfo");
+  </script>
+
+</body>
+</html>
